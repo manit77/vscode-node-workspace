@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug TS-Node",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "node",
+        "runtimeArgs": ["--nolazy", "-r", "ts-node/register", "-r", "tsconfig-paths/register"],  
+        "args": ["src/index.ts"],        
+        "cwd": "${workspaceRoot}",
+        "internalConsoleOptions": "openOnSessionStart",
+        "resolveSourceMapLocations": [
+          "${workspaceFolder}/**",
+          "${workspaceFolder}/../SharedLib/**",
+        ],
+        "skipFiles": ["<node_internals>/**", "node_modules/**"],
+        "sourceMaps": true,
+      }, {
+        "name": "Debug Nodemon",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "node",
+        "args": [
+          "node_modules/nodemon/bin/nodemon.js"          
+        ],        
+        "cwd": "${workspaceRoot}",
+        "internalConsoleOptions": "openOnSessionStart",
+        "resolveSourceMapLocations": [
+          "${workspaceFolder}/**",
+          "${workspaceFolder}/../SharedLib/**",
+        ],
+        "skipFiles": ["<node_internals>/**", "node_modules/**"],
+        "sourceMaps": true,
+      }, 
+    ]
+  }

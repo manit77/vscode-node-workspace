@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "name": "mainapp1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {   
+    "ts-node": "ts-node --preferTsExts -r tsconfig-paths/register ./src/index.ts",
+    "nodemon": "nodemon --config nodemon.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tsconfig-paths": "^4.2.0"
+  }
+}
