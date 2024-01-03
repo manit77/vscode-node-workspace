@@ -1,9 +1,9 @@
 # VSCodeNodeWorkspaceTest
 This is an example VSCode workspace project that demonstrates a TypeScript dependency project shared with another application.
 
-- Configured for VSCode integrated debugger in IDE
-- Configured to run with ts-node
-- Configured to run with nodemon
+- VSCode integrated debugger in IDE
+- NodeJS app Configured to run with ts-node
+- NodeJS app Configured to run with nodemon
 
 ## To to start:
 
